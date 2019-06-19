@@ -1,0 +1,39 @@
+{
+    "name": "chromium-windows",
+    "version": "1.0.0",
+    "description": "Easily install and update Chromium for Windows",
+    "main": "index.js",
+    "keywords": [
+        "chromium",
+        "windows",
+        "installer"
+    ],
+    "author": "Santo Pfingsten",
+    "license": "Zlib",
+    "homepage": "https://github.com/Lusito/chromium-windows",
+    "bugs": {
+        "url": "https://github.com/Lusito/chromium-windows/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Lusito/chromium-windows.git"
+    },
+    "scripts": {
+        "build": "tsc",
+        "start": "node ./dist/update-chromium.js"
+    },
+    "bin": {
+        "update-chromium": "./dist/update-chromium.js"
+    },
+    "devDependencies": {
+        "@types/adm-zip": "^0.4.32",
+        "@types/cli-progress": "^1.8.1",
+        "@types/got": "^9.6.0",
+        "typescript": "^3.5.2"
+    },
+    "dependencies": {
+        "adm-zip": "^0.4.13",
+        "cli-progress": "^2.1.1",
+        "got": "^9.6.0"
+    }
+}
