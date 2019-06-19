@@ -1,6 +1,6 @@
 {
     "name": "chromium-windows",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Easily install and update Chromium for Windows",
     "main": "index.js",
     "keywords": [
@@ -22,6 +22,9 @@
         "build": "tsc",
         "start": "node ./dist/update-chromium.js"
     },
+    "files": [
+        "dist/"
+    ],
     "bin": {
         "update-chromium": "./dist/update-chromium.js"
     },
